@@ -1,0 +1,1 @@
+CREATE TABLE `auction`.`auctionid` ( `email` VARCHAR(50) NULL , `username` VARCHAR(50) NULL , `fullname` VARCHAR(50) NULL , `password` VARCHAR(50) NOT NULL , `position` VARCHAR(50) NOT NULL ) ENGINE = InnoDB;
