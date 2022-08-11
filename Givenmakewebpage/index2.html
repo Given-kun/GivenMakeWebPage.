@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+	<title>GIVENMAKEWEBPAGE</title>
+</head>
+<style type="text/css">
+html, body {
+ height: 100px;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background-color:  #2b2525 ;
+}
+.container
+{
+    width:300%;
+  height: 300px;
+  background: #b0b3b8;
+}
+.header{
+  width:100%;
+  height: 100px;
+  background: #006491;
+ font-family:  'Josefin Sans', sans-serif;
+color: #fff;
+     font-size: .875rem;
+    letter-spacing: .05rem;
+    line-height: 1rem;
+    min-width: 12.375rem;
+    padding: .1875rem .5rem .1875rem 4rem;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+        text-align: center;
+
+ 
+}
+.navigation{
+    position: fixed;
+    width: 7px;
+    height: 100px;
+    background: #bcbcbc;
+    transition: 0.5s;
+    overflow: hidden;
+
+}
+.navigation:hover{
+    width: 612px;
+    height: 180px;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #ea1d63;
+}
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigation ul li:hover{
+    background: #ea1d63;
+     color: white;
+
+}
+.navigation ul li a{
+    position: relative;
+    
+    width: 100%;
+    text-decoration: none;
+    color: #2b2525;
+
+}
+.navigation ul li a.icon{
+    position: relative;
+
+    min-width: 60px;
+    text-align: center;
+}
+.navigation ul li a.icon .fa{
+    font-size: 24px;
+    padding: 0 20px;
+}
+
+.navigation ul li a .title{
+    position: relative;
+
+    padding: 0 10px;
+    height: 60px;
+    text-align: start;
+    white-space: nowrap;
+
+}
+
+.navigation2{
+    position: bottom;
+    width: 20px;
+    height: 100px;
+    background: #f6efef;
+    transition: 0.5s;
+    overflow: hidden;
+
+}
+.navigation2:hover{
+    width: 700px;
+    height: 159px;
+}
+.navigation2 ul{
+    position: bottom;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color:  #2b2525;
+}
+.navigation2 ul li{
+    position: bottom;
+    width: 100%;
+    list-style: none;
+}
+.navigation2 ul li:hover{
+    background: #ffe599;
+}
+.navigation2 ul li a{
+    position: bottom;
+    width: 100%;
+    text-decoration: none;
+    color:  #2b2525;
+}
+.navigation2 ul li a.icon{
+    position: bottom;
+    min-width: 60px;
+    text-align: center;
+}
+.navigation2 ul li a.icon .fa{
+    font-size: 24px;
+    padding: 0 20px;
+}
+
+.navigation2 ul li a .title{
+    position: bottom;
+    padding: 0 10px;
+    height: 60px;
+    text-align: start;
+    white-space: nowrap;
+
+}
+.intro{
+    background: #000000;
+    transition: 0.5s;
+    overflow: hidden;
+    color: #00FF00;
+     font-family: 'Silkscreen', cursive;
+ width: 800px;
+    height: 480px;
+    overflow: hidden;
+    position: center;
+ 
+}
+.status{
+    font-family: One Dot Condensed Bold,Arial Narrow,Arial,Helvetica,sans-serif;
+    color: white;
+}
+.marquee {
+ width: 1700px;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    
+}
+.marquee:before, .marquee:after{
+    position: relative;
+    top:  0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+.marquee:before{
+    left: 0;
+    background: linear-gradient(to right, #111 0%, transparent 100%);
+}
+:root{
+    --marquee-width: 80vw;
+    --marquee-width: 30vh;
+/*  --marquee-elements: 7; */
+    --marquee-width-displayed: 4;
+    --marquee-element-width: calc(var(--marquee-width)/var(--marquee-width-displayed));
+    --marquee-animation-duration: cal(var(--marquee-element)*4s);
+
+}
+.marquee-content li img{
+    width: 100%;
+    border: 2px solid #eee;
+}
+@media(max-width: 600px){
+    html{ font-size: 12px; }
+    :root{
+        --marquee-width: 100vw;
+        --marquee-heidth: 16vh;
+        --marquee-elements-displayed: 3;
+    }
+}
+.marquee:after{
+    right: 0;
+    background: linear-gradient(to left, #111 0%, transparent 100%);
+}
+.marquee-content:hover{
+    animation-play-state: paused;
+}
+@keyframes scrolling{
+    0% {transform: translateX(80vw);}
+    100% {transform: translateX(calc(-1*20vw*9));}
+}
+.marquee-content{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling 10s linear infinite;
+}
+.marquee-content li{
+    border: 30x solid teal;
+    width: 20vw;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    white-space: nowrap;
+
+}
+</style>
+<body>
+   
+
+    <div class="navigation">
+    <ul>
+        <h1>MENU</h1>
+        <li>
+        <a href="index.html">
+            <span class="icon"><i class="fa-solid fa-house"></i></span>
+            <span class="title">HOME</span>
+        </a>
+    </li>
+        <li>
+        <a href="https://www.facebook.com/Givenmakewebpage/">
+            <span class="icon"><i class="fa-solid fa-comment"></i></span>
+            <span class="title">FACEBOOK PAGE</span>
+        </a>
+    </li>   
+        <li>
+        <a href="#">
+            <span class="icon"><i class="fas fa-file"></i></span>
+            <span class="title">REQUEST A WEBPAGE</span>
+        </a>
+    </li>
+        <li>
+        <a href="#">
+            <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+            <span class="title">ARCHIVE WEBPAGE MADE BY GIVENMAKEWEBPAGE</span>
+        </a>
+    </li>
+        
+    </ul>
+
+</div>
+ <div class="header">
+    <span>←nav menu</span>
+    <img src="image.png" height="100" width="100" position="margin-right" alt="GIVEN-KUN">
+   <center> <span>HELLO AND WELCOME TO</span><H1>GIVENMAKEWEBPAGE</H1>
+    </center>
+ </div> 
+ 
+<center><div class="intro">
+<center><span><# PRICE LIST:
+
+
+STANDARD WEBPAGE DESIGN PRICE:<br>
+10.00USD / 562.90PHP<br>
+ADDITIONAL WEBPAGE: Additional (x 2)The Price<br>
+20.00USD / 1125.80<br>
+SCHOOL PROJECT with PROPOSAL: Additional (x 4)The Price<br>
+40.00USD / 2251.59PHP<br>
+EXTRA:<br>
+CANVA:<br>
+10.64USD / 600PHP <br>
+WIX:<br>
+21.32USD / 1200PHP<br>
+WORDPRESS:<br>
+50.00USD / 2814.49PHP<br>
+VBS APP FORM:<br>
+31.72USD / 1785.51PHP<br>
+GRAPHIC DESIGN SERVICE AVAILABLE FOR ONLY: 7.21USD / 400PHP<br>
+
+CATEGORY: <br>
+TSHIRT DESIGN<br>
+
+ANIME/CARTOON SKETCHING AND DRAWING<br>
+LOGO DESIGN<br>
+PERSON PORTRAITING IN DIGITAL ></span></center>
+
+</div></center>
+<div class="status">
+<span><br></span>
+<center><span>//GivenMakeWebPage is Online//</span></center>
+    <center><span>🟢</span></center>
+</div>
+<div class="status">
+<h1>REQUEST A WEBPAGE!:</h1>
+
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfPxAsUj5fPtTYivXF0zud2wWVaaTrV9gM5gFbWx0D5xo-VLg/viewform?embedded=true" width="640" height="2152" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+
+</body>
+</html>
