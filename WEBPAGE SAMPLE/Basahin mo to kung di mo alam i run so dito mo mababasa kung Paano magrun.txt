@@ -1,0 +1,4 @@
+Paano i run
+I extract mo yung zip nito a htdocs sa folder ng xampp 
+tapos Kailangan mo mag open ng xampp
+tapos i search mo "http://localhost/PRINCESSDELACRUZ/"
