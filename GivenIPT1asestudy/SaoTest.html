@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en-UK">
+ 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SAO-UI</title>
+   <style>
+   	body {
+    background-image: url('http://vignette3.wikia.nocookie.net/swordartonline/images/d/dd/First_Floor_forest.png/revision/latest?cb=20140309042049');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.modal.sao .modal-dialog {
+    transform: scale(.9);
+    transition-duration: .075s;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+ 
+.modal.sao.in .modal-dialog {
+    transform: scale(1);
+}
+.modal.sao span {
+    cursor: default
+}
+ 
+.modal.sao .SAOOuterCircle {
+    cursor: pointer
+}
+.experimentSAOModalRoot .SAOOuterCircle.o {
+    background-image: url("Yes.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 64px;
+    width: 64px;
+}
+ 
+.experimentSAOModalRoot .SAOOuterCircle.x {
+    background-image: url("No.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 64px;
+    width: 64px;
+}
+
+.modal-content {
+    background-color: #EEEEEE;
+    border-color: white;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 2px;
+    font-family: "SAO";
+    opacity: .9;
+}
+ 
+.modal-dialog .modal-title {
+    font-size: 26px
+}
+ 
+.modal-dialog .modal-body {
+    background-color: #D8D8D8;
+    box-shadow:
+        0 10px 25px -15px rgba(0, 0, 0, .5) inset,
+        0 -10px 25px -15px rgba(0, 0, 0, .5) inset;
+    color: #808080;
+    font-size: 20px;
+    width: 450px;
+}
+.modal-footer .btnholder div:hover {
+    opacity: .8
+}
+ 
+.modal-footer .btnholder div:active {
+    opacity: .6
+}
+.modal-footer .btnholder,
+.modal-dialog .modal-title,
+.modal-footer .btnholder .btn {
+    transition-property: opacity;
+    transition-timing-function: ease;
+}
+ 
+.modal-footer .btnholder,
+.modal-dialog .modal-title {
+    transition-duration: .2s;
+}
+ 
+.modal-footer .btnholder .btn {
+    transition-duration: .075s;
+}
+
+.modal {
+    padding: 0 !important;
+    text-align: center;
+}
+ 
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+ 
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+
+
+   </style>
+   <script>
+   	
+   	saoModal(
+    "Title",
+    "Content",
+    "Positive answer title",
+    "Positive answer content"
+)
+   </script>
+
+</head>
+ 
+<body>
+	<div class="modal fade sao" data-keyboard="false" data-backdrop="static" id="SAOModal" aria-hidden="true">
+    <div class="modal-dialog closed" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-xs-center">
+                <h4 class="modal-title" id="SAOModalTitle"></h4>
+            </div>
+            <div class="modal-body text-xs-center c-vcenter c-hcenter p-x-3">
+                <span id="SAOModalBody"></span>
+            </div>
+            <div class="modal-footer container-fluid p-y-2">
+                <div class="row">
+                    <div class="col-xs-6 c-hcenter text-xs-center btnholder" id="SAOModalAccept">
+                        <div class="SAOOuterCircle o">
+                    </div>
+                </div>
+                <div class="col-xs-6 c-hcenter text-xs-center btnholder" id="SAOModalDeny">
+                    <div class="SAOOuterCircle x"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
